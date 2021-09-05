@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    /* display: block; */
+}
+.contenedor {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+}
+.encabezado nav a {
+    margin: 0 .5rem;
+    color: rgb(140, 140, 140);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.encabezado nav a:hover {
+    text-decoration: underline;
+}
+
+.inicio h1 {
+    text-transform: uppercase;
+}
+.inicio span {
+    border: 1px solid green;
+    border-radius: 100px;
+    font-size: 15px;
+    display: inline-block;       
+}
+.inicio p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: rgb(140, 140, 140);
+    line-height: 0rem;
+}
+
+.imagenes-oficina {
+    display: flex;
+    margin: 1rem;
+}
+
+.texto-imagen {
+    background-image: url(./imagenes/oficinas_01.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 .5rem;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.texto-imagen2 {
+    background-image: url(./imagenes/oficinas_02.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 .5rem;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.texto-imagen3 {
+    background-image: url(./imagenes/oficinas_03.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 .5rem;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.texto-imagen4 {
+    background-image: url(./imagenes/oficinas_04.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 .5rem;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.textocolor {
+    background-color: rgb(130, 238, 134);
+    /* padding: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    padding: 0 4.7rem;
+    color: white;
+    font-size: 1.3rem;
+}
+.textocolor2 {
+    background-color: rgb(130, 238, 134);
+    /* padding: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    padding: 0 4.4rem;
+    color: white;
+    font-size: 1.3rem;
+}
+.textocolor3 {
+    background-color: rgb(130, 238, 134);
+    /* padding: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    padding: 0 4.5rem;
+    color: white;
+    font-size: 1.3rem;
+}
+.textocolor4 {
+    background-color: rgb(130, 238, 134);
+    /* padding: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+    padding: 0 4.1rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.marca {
+    display: grid;
+    grid: repeat(2, 1fr) / repeat(2, 1fr);
+}
+.marca2 {
+    margin: 1rem;
+}
+.marca h2 {
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+}
+.marca p {
+    grid-area: 2 / 2 / 2 / 3;
+    text-align: inherit;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 1rem 0;
+}
+
+.registrada {
+    color: rgb(140, 140, 140);
+}
+
+.direccion {
+    color: rgb(140, 140, 140);
+}
+
+.iconos {
+    display: flex;
+}
+
+.facebook {
+    border: 1px solid blue;
+    background-color: blue;
+    margin: .4rem;
+}
+.twitter {
+    border: 1px solid cornflowerblue;
+    background-color: cornflowerblue;
+    margin: .4rem;
+}
+
+@media (max-width: 800px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .encabezado {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .inicio {
+       display: flex;
+       align-items: center;
+       flex-direction: row;
+    }
+    .encabezado nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagenes-oficina  {
+        flex-direction: column;
+        align-items: center;
+    }
+    .marca {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .iconos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
